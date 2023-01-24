@@ -1,0 +1,9 @@
+export { default  as Navbar } from './Navbar/Navbar';
+export { default  as Hero } from './Hero/Hero';
+export { default  as Servicios } from './Servicios/Servicios';
+export { default  as Portfolio } from './Portfolio/Portfolio';
+export { default  as AcercaDe } from './AcercaDe/AcercaDe';
+export { default  as Equipo } from './Equipo/Equipo';
+export { default  as Marcas } from './Marcas/Marcas';
+export { default  as Contacto } from './Contacto/Contacto';
+export { default  as Footer } from './Footer/Footer';

@@ -1,0 +1,108 @@
+.navbar {
+    font-family: var(--font-family);
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 1rem 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.navbar-logo {
+    margin: 1em;
+}
+.navbar-logo img {
+    width: 187.5px;
+    height: 31.25px;
+}
+.navbar-scrolled {
+    font-family: var(--font-family);
+    background: var(--color-dark);
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    padding: 1rem 6rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    z-index: 5;
+}
+.navbar-scrolled-logo {
+    margin: 1em;
+}
+.navbar-scrolled-logo img {
+    width: 150px;
+    height: 25px;
+}
+.navbar-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.navbar-menu p{
+    padding: 0;
+    margin: 0 1rem;
+}
+.navbar-menu-link{
+    font-size: 1.20rem;
+    text-transform: capitalize;
+    color: white;
+}
+.navbar-menu-active-link {
+    font-size: 1.20rem;
+    text-transform: capitalize;
+    color: var(--color-yellow-light);
+}
+.navbar-menu-link:hover{
+    color: var(--color-yellow-light);
+}
+.navbar-smallscreen {
+    display: none;
+}
+.navbar-smallscreen_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: content-box;
+    background-color: var(--color-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 1.5rem;
+    z-index: 5;
+}
+.navbar-smallscreen_overlay p{
+    margin: 1.5rem;
+}
+@media screen and (max-width: 1050px) {
+    .navbar{
+        padding: 1.5rem;
+    }
+    .navbar-menu{
+        display: none;
+    }
+    .navbar-logo {
+        margin: 0;
+        align-items: center;
+    }
+    .navbar-smallscreen {
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        color: var(--color-gray-200);
+    }
+}
+@media screen and (max-width: 650px) {
+    .navbar-logo img {
+        height: 21px;
+    }
+    .navbar-scrolled {
+        padding: 1.5rem;
+    }
+}

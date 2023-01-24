@@ -1,0 +1,137 @@
+.acercade {
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5rem;
+}
+.acercade p{
+    color: var(--color-gray-600);
+}
+.acercade-titulo {
+    margin-bottom: 5rem;
+}
+.acercade-titulo h1{
+    text-transform: uppercase;
+}
+.acercade-timeline {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.acercade-timeline::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 3px;
+    content: '';
+    background-color: var(--color-gray-400);
+}
+.acercade-timeline p {
+    margin: 2rem 0 0 0;
+}
+.acercade-timeline h1{
+    margin: 0;
+    padding: 0;
+}
+.timeline-container {
+    width: 75vw;
+    margin-bottom: 15rem;
+}
+.timeline-container:last-child {
+    margin: 0;
+}
+.timeline-image {
+    position: absolute;
+    left: 50%;
+    border-radius: 50%;
+}
+.timeline-image img {
+    border: 5px solid var(--color-gray-400);
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    margin-left: -5vw;
+}
+.circle-yellow{
+    position: relative;
+    left: 50%;
+    border: 5px solid var(--color-gray-400);
+    width: 10vw;
+    height: 10vw;
+    margin-left: -5vw;
+    border-radius: 50%;
+    background-color: var(--color-yellow-light);
+    color: var(--color-gray-100);
+    font-size: 15px;
+}
+.timeline-text {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 30vw;
+    text-align: end;
+}
+.timeline-text_inverted {
+    position: relative;
+    top: 0;
+    left: 60%;
+    width: 30vw;
+    text-align: start;
+}
+@media screen and (max-width: 1430px) {
+    .circle-yellow {
+        font-size: 1vw;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .acercade-timeline::before{
+        left: 0;
+    }
+    .timeline-image {
+        left: 0;
+    }
+    .circle-yellow {
+        left: 0;
+    }
+    .timeline-text {
+        width: 85%;
+        left: 20%;
+        text-align: start;
+    }
+    .timeline-text_inverted {
+        width: 85%;
+        left: 20%;
+    }
+    .timeline-container {
+        width: 60vw;
+        margin-bottom: 3rem;
+    }
+}
+@media screen and (max-width: 650px) {
+    .timeline-container {
+        width: 100%;
+    }
+    .timeline-image img {
+        border: 10px solid var(--color-gray-400);
+        width: 25vw;
+        height: 25vw;
+        margin-left: -12.5vw;
+    }
+    .circle-yellow {
+        border: 10px solid var(--color-gray-400);
+        width: 25vw;
+        height: 25vw;
+        margin-left: -12.5vw;
+        font-size: 8px;
+    }
+    .timeline-text {
+        left: 25%;
+    }
+    .timeline-text_inverted {
+        left: 25%;
+    }
+}

@@ -1,0 +1,21 @@
+.marcas {
+    flex-direction: row;
+    margin: 4rem;
+}
+.marcas img {
+    margin: 4rem;
+    width: 150px;
+}
+@media screen and (max-width: 1050px) {
+    .marcas img{
+        margin: 0 1rem;
+    }
+}
+@media screen and (max-width: 750px) {
+    .marcas {
+        flex-direction: column;
+    }
+    .marcas img {
+        margin: 1rem;
+    }
+}

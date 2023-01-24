@@ -1,0 +1,111 @@
+.project {
+    background: white;
+    padding-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.project h1 {
+    padding-top: 1rem;
+}
+.project img {
+    width: 25vw;
+    object-fit: cover;
+    opacity: 1;
+}
+.project-img-card {
+    position: relative;
+    background-color: var(--color-yellow-light);
+    cursor: pointer;
+}
+.project-icon {
+    position: absolute;
+    color: white;
+    font-size: 60px;
+    opacity: 0;
+    transition: .5s ease;
+}
+.project-img-card:hover .project-icon {
+    opacity: 1;
+}
+.project-img-card:hover img{
+    opacity: 0.2;
+}
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 8rem;
+    font-family: var(--font-family);
+}
+.modal-content .x-icon{
+    position: relative;
+    transform: translate(46vw,-3vh);
+    font-size: 60px;
+    cursor: pointer;
+}
+.modal-content p{
+    margin: 1rem 0 0 0;
+}
+.modal-content p:nth-child(5){
+    padding: 0 17rem;
+}
+.modal-content p:last-of-type{
+    margin: 0.5rem 0 0 0;
+}
+.modal-content img {
+    margin: 1rem;
+    width: 45%;
+}
+.modal-content .close-button b{
+    padding-left: 0.4rem;
+}
+.modal-content .close-button{
+    background: var(--color-yellow-light);
+    margin: 3rem;
+    border-radius: 0.25rem;
+    padding: 1.5rem 4rem 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.modal-content .close-button:hover {
+    background: var(--color-yellow-dark);
+}
+@media screen and (max-width: 1300px) {
+    .modal-content {
+        padding: 0 2rem;
+    }
+}
+@media screen and (max-width: 1050px){
+    .project img {
+        width: 40vw;
+    }
+    .modal-content p:nth-child(5){
+        padding: 0;
+    }
+    .modal-content img {
+        margin: 1rem;
+        width: 60vw;
+    }
+    .modal-content .x-icon {
+        transform: translate(44vw, -3vh);
+    }
+}
+@media screen and (max-width: 650px) {
+    .modal-content {
+        padding: 0 2rem;
+    }
+    .modal-content img {
+        margin: 0.5rem;
+        width: 80vw;
+    }
+    .project img {
+        width: 90vw;
+    }
+    .modal-content .x-icon {
+        transform: translate(40vw, -3vh);
+    }
+}
