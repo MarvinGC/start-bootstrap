@@ -1,4 +1,4 @@
-# Plantilla de un portafolio en React
+# Plantilla para portafolio en React
 
 ### [Sitio web](https://marvingcdev.ml/)
 
